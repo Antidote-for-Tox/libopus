@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
-  s.name         = "libopus"
+  s.name         = "libopus-patched-config"
   s.version      = "1.1"
-  s.summary      = "Opus is a totally open, royalty-free, highly versatile audio codec."
+  s.summary      = "Opus is a totally open, royalty-free, highly versatile audio codec. Patched to use local config.h file."
 
   s.description  = <<-DESC
                    Opus is a totally open, royalty-free, highly versatile audio codec. 
@@ -64,7 +64,7 @@ Pod::Spec.new do |s|
   end
 
   s.xcconfig = {
-    'HEADER_SEARCH_PATHS' => '"${PODS_ROOT}/libopus/silk"'
+    'HEADER_SEARCH_PATHS' => '"${PODS_ROOT}/libopus-patched-config/silk"'
   }
 
   s.prepare_command = <<-CMD
